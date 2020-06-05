@@ -204,7 +204,13 @@ nav a:hover{
     border: 2px solid black;
     
 }
-.about-container button, .products-container button:hover{
+.about-container button:hover{
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: ease-in-out .3s;
+}
+.products-container button:hover{
     cursor: pointer;
     background: red;
     color: white;
