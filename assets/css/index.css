@@ -98,6 +98,14 @@ header nav a{
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.about-top-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding: 0 2% 2% 2%;
+
+}
 
 .top-content .text-container {
     width: 48%;
@@ -161,6 +169,35 @@ header nav a{
 .middle-content #box10{
     background: dodgerblue;
 }
+
+#about-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-container{
+    width: 46%;
+    margin-bottom: 2%;
+    border-bottom: 1px dashed black;
+    padding: 2% 0;
+}
+.about-container img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.about-container a{
+    padding-top: 3%;
+    display: flex;
+}
+.about-container button{
+    padding: 2%;
+    width: 30%;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -173,6 +210,13 @@ header nav a{
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#about-end{
+    padding: 4% 2% 6% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer {
