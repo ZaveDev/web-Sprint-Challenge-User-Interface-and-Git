@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid grey; */
 }
 
 html, body {
@@ -70,13 +71,46 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+header {
+    display: flex;
+    margin: 2% 0;
+}
+header img{
+    width: 20%;
+}
 
+header nav {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+}
+header nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    color: red;
+    transition: ease-in-out .3s;
+}
+
+#top-pic{
+    margin: 2% 0;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.about-top-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding: 0 2% 2% 2%;
+
 }
 
 .top-content .text-container {
@@ -111,7 +145,87 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content #box1{
+    background-color: teal;
+}
+.middle-content #box2{
+    background: gold;
+}
+.middle-content #box3{
+    background: cadetblue;
+}
+.middle-content #box4{
+    background: coral;
+}
+.middle-content #box5{
+    background: crimson;
+}
+.middle-content #box6{
+    background: forestgreen;
+}
+.middle-content #box7{
+    background: darkorchid;
+}
+.middle-content #box8{
+    background: hotpink;
+}
+.middle-content #box9{
+    background: indigo;
+}
+.middle-content #box10{
+    background: dodgerblue;
+}
 
+#about-middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-container, .products-container{
+    width: 46%;
+    margin-bottom: 2%;
+    border-bottom: 1px dashed black;
+    padding: 2% 0;
+}
+.about-container img, .products-container img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.about-container a, .products-container a{
+    padding-top: 3%;
+    display: flex;
+}
+.about-container button, .products-container button{
+    padding: 2%;
+    width: 30%;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    
+}
+.about-container button:hover{
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: ease-in-out .3s;
+}
+.products-container button:hover{
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: ease-in-out .3s;
+}
+#products-middle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.products-container{
+    width: 80%;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -124,6 +238,13 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#about-end{
+    padding: 4% 2% 6% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer {
